@@ -45,3 +45,5 @@ ActiveRecord::Schema.define(version: 2020_11_27_173725) do
   add_foreign_key "calendars", "users"
   add_foreign_key "days", "calendars"
 end
+
+
