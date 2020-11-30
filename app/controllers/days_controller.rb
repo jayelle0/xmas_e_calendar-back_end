@@ -27,7 +27,7 @@ class DaysController < ApplicationController
     private
 
     def day_params
-        params.require(:day).permit(:name, :user_id)
+        params.require(:day).permit(:content, :image_video, :date, :calendar_id)
     end 
 
 
