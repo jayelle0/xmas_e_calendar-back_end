@@ -12,7 +12,16 @@ class DaysController < ApplicationController
     def index 
         days = Day.all 
         render json: days
+    end
+    def edit
+        day = Day.find(params[:id])
+        render json: day 
     end 
+    def update
+        day = Day.find(params[:id])
+        day.update(day_params)
+        render json: day
+    end
 
     def show 
         day = Day.find(params[:id]) 
