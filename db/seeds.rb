@@ -14,11 +14,11 @@ User.create(name: 'Bob', email: "bob@gmail.com", username:'bob123', password: 'b
 
 
 
-Calendar.create(name: "testing", user_id: 1)
+Calendar.create(name: "testing", user_id: 7)
 
 
 date = 0
 24.times do
     date+=1
-    Day.create(calendar_id: 1, date: date)
+    Day.create(calendar_id: 34, date: date)
 end 
