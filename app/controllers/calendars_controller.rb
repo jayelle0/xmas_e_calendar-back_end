@@ -23,6 +23,7 @@ class CalendarsController < ApplicationController
 
     def destroy 
         calendar = Calendar.find(params[:id])
+        calendar.days.destroy_all
         calendar.destroy  
     end 
 
