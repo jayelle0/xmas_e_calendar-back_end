@@ -1,5 +1,5 @@
 class DaysController < ApplicationController
-    skip_before_action :authorized
+ 
 
     def new 
         day = Day.new 

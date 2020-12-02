@@ -2,6 +2,10 @@ class UsersController < ApplicationController
     wrap_parameters :user, include: [:username, :password, :email, :name]
     skip_before_action :authorized
 
+    def profile 
+        render json: {user: current_user}, status: :accepted 
+    end 
+
     def index 
         users = User.all
         render json: users

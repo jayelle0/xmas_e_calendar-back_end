@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   resources :days
 
     post '/login', to: 'auth#create'
-    # get '/profile', to: 'users#profile' 
+    get '/profile', to: 'users#profile' 
 
 end
