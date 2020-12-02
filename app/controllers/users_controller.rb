@@ -6,10 +6,10 @@ class UsersController < ApplicationController
         users = User.all
         render json: users
     end
-    def new 
-        user = User.new 
-        render json: recipe
-    end 
+    # def new 
+    #     user = User.new 
+    #     render json: recipe
+    # end 
     
     def create 
         @user = User.create(user_params)
