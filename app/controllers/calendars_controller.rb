@@ -1,4 +1,5 @@
 class CalendarsController < ApplicationController
+    skip_before_action :authorized, only: [:index, :show]
 
     def new 
         calendar = Calendar.new 
