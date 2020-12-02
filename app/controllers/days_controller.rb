@@ -1,4 +1,6 @@
 class DaysController < ApplicationController
+ 
+
     def new 
         day = Day.new 
         render json: day

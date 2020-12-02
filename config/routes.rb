@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   resources :calendars
   resources :days
 
+    post '/login', to: 'auth#create'
+    get '/profile', to: 'users#profile' 
+
 end
